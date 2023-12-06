@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- bootstrap  -->
+	<!-- use bootstrap version as 4.5v only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.4/dist/css/uikit.min.css" />
+	<!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.4/dist/js/uikit-icons.min.js"></script>
+	 <!-- fontawesome UIkit  -->
+	<script src="https://kit.fontawesome.com/83ccd2ef5b.js" crossorigin="anonymous"></script>
+	<!-- Meta -->
+	<meta charset="UTF-8">
+    <meta name="description" content="jntuh notes">
+    <meta name="keywords" content="data structure, computer 
+    organization artichecture, oop using c++">
+    <meta name="author" content="VIVEK SAI">
+     <meta name="viewport" content="width=device-width, initialscale=1.0">
+	<!-- Link the html file with css-->
+    <link rel="stylesheet" href="Netflix.css" />
+	<!-- Name of title -->
+    <title>Netflix</title>
+	<!-- Icon to the page -->
+    <link rel="icon" type="image/x-icon" href="https://res.cloudinary.com/dcodxtacf/image/upload/f_auto,q_auto/v1/Netflix/smu1ilxdlfwgybxua0hs">
+	<!-- Google font -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+	<style>
+	body {
+	background-color:black;
+	}
+     	
+    nav {
+    background-color: black;
+    padding: 13px;
+	text-align:left;
+    }
+
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+    li {
+    float: left;
+    margin-right: 5px;
+    }
+
+    a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 3px 10px;
+    text-decoration: none;
+    }
+
+    a:hover {
+    background-color: red;
+    color: black;
+    }
+	.left-margin {
+	margin-left:600px;
+	padding:5px;
+	}
+	
+	
+    #logo {
+    width:100px;
+   height:50px;
+    padding:0px;
+    margin-top:0px;
+   }	
+  #GiftBox {
+   width:cover;
+   height:30px;
+  padding:0px;
+  }
+ 
+   .img-section {
+   background-image: url("https://res.cloudinary.com/dnjrftzqp/image/upload/v1700195760/ntflixhomepage_ghjm2b.png");
+    width: 100vw;
+            height: 100vh; 
+            border: 2px solid #ccc;
+			 background-repeat: no-repeat;
+			 background-size:cover;
+
+}
+
+
+
+        .play-button:before {
+            content: '\25B6';
+            font-size: 24px;
+            color: white;
+			 position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background-color:  rgba(255, 0, 0, 0.8); 
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+		#space {
+		border-radius:5px;
+		translate : transform 0.2s ease-in-out;
+		}
+		td {
+		padding:0 15px;
+		}
+		.but1 {
+		justify-content:center;
+		margin-top:300px;
+		background-color:transparent;
+		border-color:white;
+		color:white;
+		padding:5px;
+		}
+		.but2 {
+		justify-content:center;
+				margin-top:300px;
+			background-color:transparent;
+border-color:white;
+		color:white;
+		padding:5px;
+
+		}
+		.img-section {
+		
+		position:relative ;
+		left:25px;
+		}
+		td:hover { 
+		transform:scale(1.5);
+		}
+		.heading-4
+		{
+		margin-left:20px;
+		}
+		
+		#logo { width:100px;
+		height:50px;
+		}
+		#left {
+		margin-left:25px;
+		}
+		#vistor {
+		 width:50px;
+		 }
+		 select {
+		 background-color:transparent;
+		 color:white;
+		 }
+       .button-lil{ 
+         border-radius:5px;
+padding:15px;
+border:3px solid black;
+background-color:transparent;
+font-weight:bold;
+justify-content:center;
+margin-left:50px;
+margin-top:400px;
+color:white;
+}
+
+#core{
+margin-right:10px;
+justify-content:center;
+}
+#core-1{
+margin-right:10px;
+justify-content:center;
+color:white;
+}
+button{
+background-color: white;
+}
+.heading {
+ family-weight:bold;
+ color:white;
+ margin-left:45px;
+
+}	 
+.para{
+color:white;
+margin-left:45px;
+}
+.background{
+background-color:black;
+height:400vh;
+background-size:cover;
+}
+
+.heading-4{
+color:white;
+family-weight:bold;
+margin-left:25px;
+}
+
+td:hover{
+transform:scale(1.1);
+}
+td{
+border-stryle:hidden;
+}
+#vni{ marhin:10px; }
+.footer {
+color:#fff;
+padding:20px;
+display:flex;
+justify-content:space-around;
+flex-wrap:wrap;
+margin:150px;
+}
+.footer-menu-section{
+flex:1;
+margin-right:20px;
+}
+.footer-menu-section2,
+.footer-menu-section3,
+.footer-menu-section4, {
+flex ; 1;
+}
+
+.footer-menu-section ul,
+
+.footer-menu-section-2 ul,
+.footer-menu-section-3 ul,
+.footer-menu-section-4 ul,{
+list-style:none;
+padding:0;
+}
+
+.footer-menu-section,list,
+.footer-menu-section-2.order, 
+.footer-menu-section-3.order, 
+.footer-menu-section-4.order, { 
+margin-bottom:10px;
+}
+
+.footer . fa -copyright {
+margin-right:5px;
+}
+
+.list{
+margin:15px;
+}
+.order{
+margin:15px;
+}
+.service{
+background-color:transparent;
+color:white;
+border-color:white;
+margin-left:15px;
+}
+
+#social{
+margin:15px;
+margin-top:250px;
+}
+
+.social{
+position:relative;
+left:190px;
+}
+
+
+
+
+		
+		
+		
+    </style>
+</head>
+
+
+  <body>
+  <div class="navbar" >
+      <nav>
+        <ul>
+		    <li><a href="#home"><img src= "https://i.pinimg.com/564x/bc/26/c5/bc26c51cb8c3efd13ceb58c743bdc340.jpg" id="logo" > </a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">TV Shows</a></li>
+            <li><a href="#services">Movies</a></li>
+            <li><a href="#contact"class="left-margin">news&popular </a></li>
+			
+			<i class="fa-sharp fa-solid fa-magnifying-glass" ></i>
+			<li><a href="#contact">CHILDREN </a></li>
+			<li><i class="fa-sharp fa-solid fa-gift" ></i></li>
+			<li><i class="fa-sharp fa-solid fa-bell" ></i></li>
+			</div>
+			
+        </ul>
+    </nav>
+
+  </div>
+  <div class="img-section" >
+  <button class="but1"  ><i class ="fa-solid fa-play" id="size" </i> play </button>
+  <button class="but2"><i class ="fa-solid fa-plus" id="add" </i> My list </button>
+  </div>
+  
+  
+
+  <div class="background">
+  <div class="mycart">
+  <h4 class="heading-4" style="color:white;"> my list </h4>
+  <table border="0">
+  <tr>         
+  <td><img src=" https://res.cloudinary.com/dnjrftzqp/image/upload/v1700197479/ijmblnyjoa9ji2bsnzbb.png" style="padding:10px;"  id="space"></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700210773/yh1tvhuz11gl83s9plzf.png" id="space"></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700210779/ctfz2qi8zu6h9tx0jv6t.png" id="space"></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700210786/pysbc21q2hzwecvaxc7b.png" id="space"></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700210791/krtkkhbu9yuvncceu536.png"id="space" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700210798/kytorist0tf9atsq494l.png" id="space"></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700211119/aixphagtwnez4ob4kjph.png" id="space"></td>
+  </tr>
+  </table>
+  
+  
+  
+  <h4 class="heading-4" style="color:white;"> trending  now</h4>
+  <table border="0">
+  <tr>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239642/qbrjrhwc0bir4odbq0p6.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239636/wl7ynfzrgzox4urk7wa2.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239630/sb66dgtwhbluqtjy7tkg.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239399/ritslri7eketya9mtzul.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239617/qbd0v1jphojl4wqjom1q.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239612/m6lbt78cmxm3qh65aiok.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239605/iapgoiqwcqu8lj6y91mh.png" ></td>
+  </tr>
+  </table>
+  
+   <h4 class="heading-4" style="color:white;">holliwood films</h4>
+  <table border="0">
+  <tr>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239599/knbzjxxcakkabhkdulq6.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239592/tngkkgaj2f1hirphpxuf.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239584/y21deqm4lrz4sbg47l2s.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239577/lvw4oaivprqv76rnmnns.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239569/b8ftvnthoecijpxtjhli.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239558/aouh53bwb2nld8p13dfr.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239550/rjjabopwoxhkemndleeb.png" ></td>
+  </tr>
+  </table>
+  
+   <h4 class="heading-4" style="color:white;"> action films</h4>
+  <table border="0">
+  <tr>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239542/xghomz3oaqb3e5ghvn48.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239530/cuq1gk1ndmfjfrmvmk7f.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239521/z1fzzvfn3b2w1wxzxhh7.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239512/akwwe3tamnrdly1n8ude.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239499/zrmckhu5koa5nrnhfnx5.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239490/prho84lchoeh3viwp2rk.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239486/ock58fog0fzfgcpefmbz.png" ></td>
+  </tr>
+  </table>
+  
+  
+   <h4 class="heading-3" style="color:white;"> indian comedy films</h4>
+  <table border="0">
+  <tr>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239471/bhibw2xxglvogy32cqvz.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239439/idko1pxhragehbzcm2yr.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239569/b8ftvnthoecijpxtjhli.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239419/kaahrhgbgdteoeogchps.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239409/uzqeq4clo1jw0wxrnw4p.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239399/ritslri7eketya9mtzul.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239390/vqxntzxbecrbf5waiyo5.png" ></td>
+  </tr>
+  </table>
+  
+  
+   <h4 class="heading-4" style="color:white;">children and family films</h4>
+  <table border="0">
+  <tr>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239379/st5ta7em71j8lpl1r7ot.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239369/dpnl4vl2gunkhnpuob0u.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239360/dghrrymmc0ndyw6qbfpr.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700210798/kytorist0tf9atsq494l.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239336/odzizxrxwvduffquhpcv.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239324/djfzkcukwrtrh7ichd5u.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239311/wyyzfwrqtwntxj1a2zic.png" ></td>
+  </tr>
+  </table>
+  
+   <h4 class="heading-4" style="color:white;"> horror films</h4>
+  <table border="0">
+  <tr>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239298/qmaquc1kneyuzithomqi.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239287/j0n9k3kwxzeppphkk5xq.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239276/uxodr9ilbjedgkp52oj6.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239264/plyhrr3ryzdu321teuno.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700210798/kytorist0tf9atsq494l.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239242/mrr1khpkfwkf2iiajgbe.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239231/gkrelrrob1toqoot8hff.png" ></td>
+  </tr>
+  </table>
+  
+   <h4 class="heading-4" style="color:white;"> new releases</h4>
+  <table border="0">
+  <tr>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239215/o6n6h631s1zfmgve8jpk.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239195/yapo2a434boc05jmn9hn.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239182/o580baficv4voe1rnyid.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239169/irtlxbvlulcvk3iw3h0n.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239159/adxxygzxzzb9pu0ew87r.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239148/qv6ezystkcmt5e3q8eta.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239136/eeon0xr9lmdtuzwlsrad.png" ></td>
+  </tr>
+  </table>
+  
+  
+   <h4 class="heading-4" style="color:white;"> action films </h4>
+  <table border="0">
+  <tr>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239120/uddlbl3agrfnyii20id1.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239110/j2pc5i9zloftmkdvoa9f.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239099/o1nb1gugfkqt2geackyp.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239089/wxr6tfpxuanyk7rzcbdi.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239072/jk3szah38m1ozmjyrsai.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700239060/oud4x56hh6mo3mwnxbso.png" ></td>
+  <td><img src="https://res.cloudinary.com/dnjrftzqp/image/upload/v1700210798/kytorist0tf9atsq494l.png" ></td>
+  </tr>
+  </table>
+  
+  
+  
+  <div class="footer">
+   <div class="social">
+    <table border="0">
+	 <tr>
+	 <th><i class="fab fa-facebook-f" style="color:#e1e1e1;" id="social"> </i> </th>
+	 <th><i class="fab fa-instagram" style="color:#e1e1e1;" id="social"> </i> </th>
+	 <th><i class="fab fa-twitter" style="color:#e1e1e1;" id="social"> </i> </th>
+	 <th><i class="fab fa-youtube" style="color:#e1e1e1;" id="social"> </i> </th>
+     </tr>
+	 </table>
+	 </div>
+	<div class ="footer-menu-section">
+	 <ul class="no-bullete">
+	 <a href="#"><li class="list"> audio descm </li></a>
+	 <a href="#"><li class="list"> inverter relations </li></a>
+	 <a href="#"><li class="list"> legal notice </li></a>
+	 <a href="#"><button class="service"> service code </button></a>
+	 <a href="#"><li class="url"><i class ="fab fa-copyright" style="color:#ffffff;"></i>1997-2023 netflix </li></a>
+	 </ul>
+	 </div>
+	 <div class="footer-menu-section-2">
+	 <ul class="no-bullets">
+	 <a href="#"> <li class ="order"> help center </li></a>
+	 <a href="#"> <li class ="order"> jobs </li></a>
+	 <a href="#"> <li class ="order"> cookies preferences </li></a>
+	 </ul>
+	 </div>
+	 <div class="footer-menu-section-3" >
+	 <ul class="no-bullets">
+	  <a href="#"> <li class ="order"> media center </li></a> 
+	  <a href="#"> <li class ="order"> privacy</li></a>
+	  <a href="#"> <li class ="order"> contact us </li></a>
+	 </ul>
+	 </div>
+	 
+	 
+	 
+  
+</div>
+</div>
+  
+     
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+     
+    <!-- ID Attribute CCBP UIKIT(Don't change this code it is Default) -->
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+	 <!-- ID Attribute CCBP UIKIT -->
+  </body>
+</html>
+
